@@ -1,18 +1,21 @@
 body{
     height:100vh;
-    background: linear-gradient(to bottom, #411c4f,#360e46,#2b033b);
+    background: url('numberguessinggame.jpg') no-repeat center center/cover;
+    font-family: cursive;
     color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .game{
-    width:45%;
     height:auto;
     border:none;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    text-align:center;
+    padding: 20px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 #submit{
     padding:5px;
@@ -25,20 +28,9 @@ button:hover{
 #guess{
     padding:8px;
 }
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
-    -webkit-appearance:none;
-    margin:0;
-}
-input[type="number"]{
-    -moz-appearance: textfield;
-}
-input:focus{
-    outline:none;
-} */
+
 @media screen and (max-width: 768px){
     .game{
-        width:100%;
         border:none;
         text-align:center;
     }
